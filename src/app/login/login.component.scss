@@ -1,0 +1,46 @@
+.login-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, red,blue);
+
+    .logo{
+        font-size: 70px;
+        font-weight: bold;
+        font-family:'Distant Galaxy', Times;
+        letter-spacing: 10px;
+        position:absolute;
+        top: 150px;
+        right: 50px;
+        color: white;
+
+    }
+    .desc{
+        font-size: 34px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 300px;
+        right: 50px;
+        text-align: right;
+        color: white;
+    }
+
+    .login-form{
+        width: 500px;
+        height: 200px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    .error{
+        position: absolute;
+        top: 32px;
+        right: 0px;
+        color: red;
+    }
+}
