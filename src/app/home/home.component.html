@@ -2,22 +2,30 @@
 <div class = "home-container">
     <div class = "all-movies">
         <div class = "top">
+            
+            
             <h4>Trending Movies</h4>
-            <div class = "view-all">View all</div>
+            
         </div>
         <div class = "movies-thumbnail">
             <div class = "movie" *ngFor="let movie of trendingMovies">
-                <div class = "cover" >
+                <div class = "cover" (click)="goToMovie('movie', movie.id)" >
                     <img src="{{'https://image.tmdb.org/t/p/original' + movie.poster_path}}" alt = "">
                 </div>
-                <div class = "detail">
-                    <div class = "name" > {{movie.title}}</div>
-                    <div class = "rating"></div>
+                
+            </div>
+        </div>
+        <div class = "top"> <h4>Top Rated</h4></div>
+        <div class = "movies-thumbnail">
+            <div class = "movie" *ngFor="let movie of popularMovies">
+                <div class = "cover" (click)="goToMovie('movie', movie.id)" >
+                    <img src="{{'https://image.tmdb.org/t/p/original' + movie.poster_path}}" alt = "">
                 </div>
+                
             </div>
         </div>
 
     </div>
-    <div class = "popular-movies"></div>
+    
 
 </div>

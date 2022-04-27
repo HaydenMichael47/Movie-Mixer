@@ -1,7 +1,7 @@
 .header-container{
     width: 100%;
     height: 80px;
-    background-color: yellow;
+    background: linear-gradient(135deg, red,blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,5 +19,6 @@
         font-weight: bold;
         margin-right: 40px;
         cursor: pointer;
+        color: white;
     }
 }

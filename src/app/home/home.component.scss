@@ -1,7 +1,7 @@
 .home-container{
     display:flex;
     .all-movies{
-       width: 75%;
+       width: 100%;
        min-height: calc(100vh - 80px); 
        border-right: 1px solid yellow;
        padding: 20px 40px;
@@ -10,6 +10,11 @@
            display: flex;
            align-items: center;
            justify-content: space-between;
+           flex-wrap: wrap;
+           .search{
+               width: 100%;
+               padding-bottom: 15px;
+           }
            h4{
                text-transform: uppercase;
                font-weight: bold;
@@ -18,12 +23,24 @@
            }
            
        }
+
+       
        .movies-thumbnail{
+        display:inline-flex;
+        flex-wrap: wrap;
+        justify-content:left;
+
+        
+        
+           margin-right: 20px;
            .movie{
                .cover{
                    img{
-                       width: 100px;
-                       height: 150px;
+                       padding-right: 15px;
+                       padding-bottom: 10px;
+                       width: 200px;
+                       height: 300px;
+                      
                    }
                 }
            }
